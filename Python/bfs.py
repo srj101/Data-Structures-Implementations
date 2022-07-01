@@ -7,7 +7,7 @@ g = {
     "f":[]
 }
 
-def dfs(g,s):
+def bfs(g,s):
     m = []
     stack = [s]
     while len(stack)>0:
@@ -17,4 +17,4 @@ def dfs(g,s):
         stack.pop(0)
     return m
 
-print(dfs(g,"a"))
+print(bfs(g,"a"))

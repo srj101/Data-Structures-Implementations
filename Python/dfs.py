@@ -11,10 +11,10 @@ def dfs(g,s):
     m = []
     stack = [s]
     while len(stack)>0:
-        m.append(stack[0])
-        for j in g[stack[0]]:
+        current = stack.pop()
+        m.append(current)
+        for j in g[current]:
             stack.append(j)
-        stack.pop(0)
     return m
 
 print(dfs(g,"a"))
